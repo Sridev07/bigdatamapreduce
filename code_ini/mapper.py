@@ -1,12 +1,13 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
+import csv
 
-# Input comes from STDIN (standard input)
-for line in sys.stdin:
-    # Remove leading and trailing whitespace
-    line = line.strip()
-    # Split the line into words
-    words = line.split()
-    # Output each word with a count of 1
-    for word in words:
-        print(f"{word}\t1")
+# Read input from standard input
+reader = csv.reader(sys.stdin)
+next(reader)  # Skip the header
+
+# For each row, output the brand and the sales value
+for row in reader:
+    brand = row[2]  # Assuming brand is the third column
+    sales = row[4]  # Assuming sales is the fifth column
+    print(f"{brand}\t{sales}")
