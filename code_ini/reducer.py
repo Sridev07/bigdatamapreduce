@@ -1,34 +1,21 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 
-current_word = None
-current_count = 0
-word = None
+current_brand = None
+lowest_sales = None
+lowest_brand = None
 
-# Input comes from STDIN
+# Read input from standard input
 for line in sys.stdin:
-    # Remove leading and trailing whitespace
-    line = line.strip()
+    brand, sales = line.strip().split("\t")
+    sales = int(sales)
+    
+    # Find the lowest sales for each brand
+    if current_brand is None or sales < lowest_sales:
+        current_brand = brand
+        lowest_sales = sales
+        lowest_brand = brand
 
-    # Parse the input from mapper.py (word and count)
-    word, count = line.split('\t', 1)
-
-    # Convert count (currently a string) to int
-    try:
-        count = int(count)
-    except ValueError:
-        continue
-
-    # If word is same as current_word, accumulate the count
-    if current_word == word:
-        current_count += count
-    else:
-        # If current_word is not None, output the current_word and current_count
-        if current_word:
-            print(f"{current_word}\t{current_count}")
-        current_word = word
-        current_count = count
-
-# Don't forget to output the last word if needed
-if current_word == word:
-    print(f"{current_word}\t{current_count}")
+# Output the brand with the lowest sales
+if lowest_brand is not None:
+    print(f"Lowest Sales: {lowest_sales} for brand {lowest_brand}")
