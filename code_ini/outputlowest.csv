@@ -1,0 +1,11 @@
+TransactionID,Date,MobileModel,Brand,Price,UnitsSold,TotalRevenue,CustomerAge,CustomerGender,Location,PaymentMethod
+bdcfcebc-1663-4012-9c26-f8e08371ef8c,28-03-2024,modern,Douglas-Dalton,103.32,76,24544.8,41,Male,Torresshire,Debit Card
+103e0087-b29c-4839-876a-099b6796b265,07-06-2024,attack,Walters and Sons,104.99,1,16544.32,47,Other,East Sarah,Debit Card
+907e38d0-0342-4614-8287-b29810366a20,13-06-2024,movie,Conrad Ltd,107.05,3,80637.66,52,Male,Wrightchester,Online
+95b1d002-ca82-4cf9-874f-e459284e317c,16-04-2024,feel,Hays LLC,110.16,64,22848.35,39,Female,Chungfort,Debit Card
+e166cef9-8f57-44fa-ae58-c93afc933f69,25-04-2024,huge,Woods-Li,113.9,42,59290.03,60,Other,North Kayla,Credit Card
+7278319c-f4ff-4957-8747-de5d8c4fb0b2,04-04-2024,majority,Wall-Reed,114.6,34,5227.36,34,Male,Chavezhaven,Credit Card
+d830c382-2f68-4f61-aa3a-8e32120a4d2e,03-02-2024,let,"Webb, Orr and Benson",115.22,54,22854.4,27,Other,Colehaven,Debit Card
+b0bf3c70-7bb3-4514-92f7-e752db4def1b,21-06-2024,short,"Morse, Bishop and Smith",117.52,78,34110.18,47,Other,Tylerchester,Online
+6c45ed4f-5d05-457d-a22a-2892566e8984,14-04-2024,bar,Hoffman PLC,118.14,39,16586.68,22,Other,New Christophertown,Online
+bca91fce-ff54-43ff-b0e3-d596e8d1c788,23-01-2024,boy,Russell Ltd,118.69,62,6603.6,20,Other,Kathleenbury,Debit Card
